@@ -27,7 +27,7 @@ async function main() {
 
   const [signer] = await ethers.getSigners()
 
-  const contractFactory = await ethers.getContractFactory('TestToken')
+  const contractFactory = await ethers.getContractFactory('Tobstoken')
   const contract = contractFactory.attach(contractAddress)
 
   const functionName = 'mint1000tokens'
